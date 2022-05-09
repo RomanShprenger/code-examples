@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test: markup of default button after user actions Should render Button after click correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--press"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of default button after user actions Should render Button after focus and hover correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--active yui-button--hover-active"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of default button after user actions Should render Button after focus correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--active"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of default button after user actions Should render Button after hover correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--hover"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of disabled button after user actions Should render Button after click correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of disabled button after user actions Should render Button after focus and hover correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of disabled button after user actions Should render Button after focus correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of disabled button after user actions Should render Button after hover correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of focused button after user actions Should render Button after click correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--press"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of focused button after user actions Should render Button after focus and hover correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--active yui-button--hover-active"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of focused button after user actions Should render Button after focus correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--active"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: markup of focused button after user actions Should render Button after hover correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--hover"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render Button with class prefix correctly 1`] = `
+<button
+  className="test test--m test--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render Button with default settings correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render button type Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render disabled Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary yui-button--disabled"
+  disabled={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render file Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--file yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render focused Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render focused and disabled Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render icon Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--icon yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render inside Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--inside"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render inverse Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--inverse"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render large Button correctly 1`] = `
+<button
+  className="yui-button yui-button--l yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render medium Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render outline Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--outline"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render primary Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render reset Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="reset"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render secondary Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--secondary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render small Button correctly 1`] = `
+<button
+  className="yui-button yui-button--s yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="button"
+/>
+`;
+
+exports[`Test: render of different variants of button Should render submit Button correctly 1`] = `
+<button
+  className="yui-button yui-button--m yui-button--primary"
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  type="submit"
+/>
+`;

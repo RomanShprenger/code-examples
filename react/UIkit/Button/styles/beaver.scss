@@ -1,0 +1,260 @@
+@import '../../../styles/beaver/variables';
+
+.yui-button {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  outline: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+  user-select: none;
+  border-radius: 4px;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 8 * $multiplicity;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &--l {
+    font-size: 14px;
+    padding: 0 16px;
+    line-height: 10 * $multiplicity;
+  }
+
+  &--m {
+    font-size: 12px;
+    padding: 0 12px;
+    letter-spacing: 0.75px;
+    line-height: 8 * $multiplicity;
+  }
+
+  &--s {
+    font-size: 8px;
+    padding: 0 8px;
+    letter-spacing: 1.25px;
+    line-height: 6 * $multiplicity;
+  }
+
+  &--icon {
+    line-height: 6 * $multiplicity;
+    border-radius: 50%;
+  }
+
+  &--icon#{&}--l {
+    padding: 8px;
+  }
+
+  &--icon#{&}--m {
+    padding: 4px;
+  }
+
+  &--icon#{&}--s {
+    padding: 0;
+  }
+
+  &--file {
+    position: relative;
+    & > input[type="file"] {
+      position: absolute;
+      cursor: pointer;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+  }
+
+  // Primary
+
+  &--primary {
+    background-color: map-get($colors, accent);
+    color: map-get($colors, white);
+  }
+
+  &--primary#{&}--hover,
+  &--primary:hover {
+    color: map-get($colors, 'white');
+    background-image: linear-gradient(map-get($colors, 'white10'), map-get($colors, 'white10'));
+  }
+
+  &--primary#{&}--focus,
+  &--primary:focus {
+    color: map-get($colors, 'white');
+    background-image: linear-gradient(map-get($colors, 'white10'), map-get($colors, 'white10'));
+  }
+
+  &--primary#{&}--active,
+  &--primary:active {
+    color: map-get($colors, 'white');
+    background-image: linear-gradient(map-get($colors, 'black20'), map-get($colors, 'black20'));
+  }
+
+  &--primary#{&}--disabled,
+  &--primary:disabled {
+    color: map-get($colors, 'grey10');
+    background-color: map-get($colors, 'grey30');
+    background-image: none;
+  }
+
+  // Secondary
+  &--secondary {
+    background-color: transparent;
+    color: map-get($colors, accent);
+  }
+
+  &--secondary#{&}--m {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  &--secondary#{&}--l {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  &--secondary#{&}--icon {
+    padding: 8px;
+  }
+
+  &--secondary#{&}--hover,
+  &--secondary:hover {
+    color: map-get($colors, accent);
+    background-image: linear-gradient(rgba(map-get($colors, accent),0.08), rgba(map-get($colors, accent),0.08));
+  }
+
+  &--secondary#{&}--focus,
+  &--secondary:focus {
+    color: map-get($colors, accent);
+    background-image: linear-gradient(rgba(map-get($colors, accent),0.12), rgba(map-get($colors, accent),0.12));
+  }
+
+  &--secondary#{&}--active,
+  &--secondary:active {
+    color: map-get($colors, accent);
+    background-image: linear-gradient(rgba(map-get($colors, accent),0.16), rgba(map-get($colors, accent),0.16));
+  }
+
+  &--secondary#{&}--disabled,
+  &--secondary:disabled {
+    color: map-get($colors, 'grey30');
+    background-color: map-get($colors, 'grey10');
+    background-image: none;
+  }
+
+  // Secondary + Icon
+
+  &--secondary#{&}--icon {
+    color: map-get($colors, 'grey30');
+  }
+
+  &--secondary#{&}--icon#{&}--disabled,
+  &--secondary#{&}--icon:disabled {
+    color: map-get($colors, 'grey15');
+  }
+
+  // Outline
+
+  &--outline {
+    border: 1px solid map-get($colors, 'grey15');
+    color: map-get($colors, accent);
+  }
+
+  &--outline#{&}--hover,
+  &--outline:hover {
+    color: map-get($colors, accent);
+    background-image: linear-gradient(rgba(map-get($colors, accent),0.08), rgba(map-get($colors, accent),0.08));
+  }
+
+  &--outline#{&}--focus,
+  &--outline:focus {
+    color: map-get($colors, accent);
+    background-image: linear-gradient(rgba(map-get($colors, accent),0.12), rgba(map-get($colors, accent),0.12));
+  }
+
+  &--outline#{&}--active,
+  &--outline:active {
+    color: map-get($colors, accent);
+    background-image: linear-gradient(rgba(map-get($colors, accent),0.16), rgba(map-get($colors, accent),0.16));
+  }
+
+  &--outline#{&}--disabled,
+  &--outline:disabled {
+    color: map-get($colors, 'grey30');
+    background-color: map-get($colors, 'grey10');
+    background-image: none;
+  }
+
+  // Inside + icon
+
+  &--inside#{&}--icon {
+    color: map-get($colors, 'grey30');
+  }
+
+  &--inside#{&}--icon#{&}--disabled,
+  &--inside#{&}--icon:disabled {
+    color: map-get($colors, 'grey15');
+  }
+
+  &--inside {
+    border-radius: 4px;
+    padding: 8px;
+    width: 40px;
+  }
+
+  &--inside#{&}--hover,
+  &--inside:hover {
+    background-image: linear-gradient(rgba(map-get($colors, accent),0.08), rgba(map-get($colors, accent),0.08));
+  }
+
+  // Inverse
+
+  &--inverse {
+    color: #b2bdff;
+  }
+
+  &--inverse#{&}--hover,
+  &--inverse:hover {
+    color: #b2bdff;
+    background-color: rgba(178, 189, 255, 0.16);
+  }
+
+  &--inverse#{&}--focus,
+  &--inverse:focus {
+    color: #b2bdff;
+    background-color: rgba(178, 189, 255, 0.2);
+  }
+
+  &--inverse#{&}--active,
+  &--inverse:active {
+    color: #b2bdff;
+    background-color: rgba(178, 189, 255, 0.24);
+  }
+
+  &--inverse#{&}--disabled,
+  &--inverse:disabled {
+    color: map-get($colors, 'white')30;
+    background-color: map-get($colors, 'white')10;
+  }
+
+  // mobile full width
+  &--mob-wide {
+    @media #{map-get($breakpoints, 'mobile')} {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

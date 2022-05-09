@@ -1,0 +1,155 @@
+@import '../../../styles/giraffVariables';
+
+.yui-button {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 0;
+  user-select: none;
+  border-radius: 4px;
+  background: transparent;
+  font-family: inherit;
+  font-size: $button-font-size;
+  line-height: 8px * $multiplicity;
+  letter-spacing: $button-letter-spacing;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &--l {
+    font-size: 16px;
+    line-height: 10px * $multiplicity;
+  }
+
+  &--m {
+    font-size: 12px;
+    padding: 0 12px;
+    letter-spacing: 0.75px;
+    line-height: 8px * $multiplicity;
+  }
+
+  &--s {
+    font-size: 8px;
+    padding: 0 8px;
+    letter-spacing: 1.25px;
+    line-height: 6px * $multiplicity;
+  }
+
+  &--icon {
+    line-height: 6px * $multiplicity;
+    border-radius: 50%;
+  }
+
+  &--icon#{&}--l {
+    padding: 12px;
+  }
+
+  &--icon#{&}--m {
+    padding: 4px;
+  }
+
+  &--icon#{&}--s {
+    padding: 0;
+  } 
+
+  &--file {
+    position: relative;
+    & > input[type="file"] {
+      position: absolute;
+      cursor: pointer;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+
+  &--disabled {
+    cursor: default;
+  }
+
+  // Primary
+
+  &--primary {
+    background-color: $ACCENT;
+    color: $WHITE;
+  }
+
+  &--primary#{&}--hover,
+  &--primary:hover,
+  &--primary#{&}--focus,
+  &--primary:focus {
+    color: $WHITE;
+    background-color: $ACCENTLIGHT;
+  }
+
+  &--primary#{&}--active,
+  &--primary:active {
+    color: #B8E6CF;
+    background-color: $ACCENTDARK;
+  }
+
+  &--primary#{&}--disabled,
+  &--primary:disabled {
+    color: $GREY20;
+    background-color: $GREY7;
+  }
+
+  // Outline
+
+  &--outline {
+    box-shadow: inset 0 0 0 1px $GREY10;
+    color: $PRIMARY;
+  }
+
+  &--outline#{&}--hover,
+  &--outline:hover {
+    color: $PRIMARY;
+    background-color: $GREY05;
+  }
+
+  &--outline#{&}--focus,
+  &--outline:focus {
+    color: $PRIMARY;
+    background-color: $GREY05;
+  }
+
+  &--outline#{&}--active,
+  &--outline:active {
+    color: $PRIMARY;
+    background-color: $GREY10;
+  }
+
+  &--outline#{&}--disabled,
+  &--outline:disabled {
+    color: $GREY20;
+    background-color: $GREY7;
+  }
+
+  // Inside + icon
+
+  &--inside#{&}--icon {
+    color: $GREY30;
+  }
+
+  &--inside#{&}--icon#{&}--disabled,
+  &--inside#{&}--icon:disabled {
+    color: $GREY15;
+  }
+
+  &--inside {
+    border-radius: 4px;
+    padding: 8px;
+  }
+
+  &--inside#{&}--hover,
+  &--inside:hover {
+    background-image: linear-gradient(rgba($ACCENT,0.08), rgba($ACCENT,0.08));
+  }
+}

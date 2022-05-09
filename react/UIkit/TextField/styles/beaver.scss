@@ -1,0 +1,199 @@
+@import '../../../styles/beaver/variables';
+
+.yui-input {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+
+  &__element {
+    width: 100%;
+    padding: 0 12px;
+    outline: none;
+    border: 0;
+    text-align: left;
+    text-overflow: ellipsis;
+    font-family: inherit;
+    font-size: map-get($input, 'font-size');
+    line-height: 20px;
+    height: map-get($input, 'height');
+    font-weight: map-get($input, 'font-weight');
+    letter-spacing: map-get($input, 'letter-spacing');
+    color: map-get($colors, black);
+    border-bottom: 1px solid map-get($colors, 'grey10');
+    border-radius: map-get($input, 'border-radius');
+    background: map-get($colors, 'grey10');
+    box-sizing: border-box;
+    transition: border-color 0.15s linear;
+
+    &:focus::-webkit-input-placeholder { color:transparent; }
+    &:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+    &:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+    &:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+    &:focus {
+      outline: none;
+      border: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      border-bottom: 1px solid map-get($colors, 'grey30');
+    }
+
+    &:read-only {
+      padding: 0;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    color: map-get($colors, 'grey60');
+  }
+
+  &__helper {
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    padding: 4px 0;
+    min-height: 24px;
+    box-sizing: border-box;
+    color: map-get($colors, 'grey60');
+    display: block;
+
+    &--counter {
+      text-align: right;
+      right: 0;
+    }
+  }
+
+  &__label {
+    left: 0;
+    top: 4px;
+    transition: all .2s linear
+  }
+
+  &__before,
+  &__after {
+    position: absolute;
+    top: 24px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: map-get($colors, 'grey30');
+  }
+
+  &__before {
+    left: 0;
+    & ~ .yui-input__element {
+      padding-left: 40px;
+    }
+  }
+
+  &__after {
+    right: 0;
+    & ~ .yui-input__element {
+      padding-right: 40px;
+    }
+  }
+
+  &--white &__element {
+    background: map-get($colors, 'white70');
+  }
+
+  &--empty:not(.yui-input--active) {
+    .yui-input__before ~ .yui-input__element:not([placeholder]) {
+      & ~ .yui-input__label {
+        padding-left: 40px;
+      }
+    }
+
+    .yui-input__after ~ .yui-input__element:not([placeholder]) {
+      & ~ .yui-input__label {
+        padding-right: 40px;
+      }
+    }
+  }
+
+  &--empty &__label {
+    font-size: map-get($input, 'font-size');
+    line-height: map-get($input, 'height');
+    padding: 0 12px;
+    top: map-get($input, 'margin-y')
+  }
+
+  &--error &__element {
+    border-bottom: 2px solid map-get($colors, 'error');
+  }
+
+  &--error &__label,
+  &--error &__helper {
+    color: map-get($colors, 'error');
+  }
+
+  &--active &__element {
+    border-bottom: 2px solid map-get($colors, 'accent');
+  }
+
+  &--active &__element:not([placeholder]) + &__label,
+  &--empty &__element[placeholder] + &__label {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0;
+    top: 4px;
+  }
+
+  &--active &__label,
+  &--active &__helper {
+    color: map-get($colors, 'accent');
+  }
+
+  &--active#{&}--error &__label,
+  &--active#{&}--error &__helper {
+    color: map-get($colors, 'error');
+  }
+
+  &--active#{&}--error &__element {
+    border-bottom: 2px solid map-get($colors, 'error');
+  }
+
+  // Read Only
+
+  &--readonly &__element {
+    background: transparent;
+    color: map-get($colors, 'black');
+    border-bottom: 0;
+  }
+
+  // Disabled
+
+  &--disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  &--disabled &__element {
+    border-bottom: 1px solid map-get($colors, 'grey10');
+  }
+
+  &--disabled &__label,
+  &--disabled &__helper {
+    color: map-get($colors, 'grey60');
+  }
+}

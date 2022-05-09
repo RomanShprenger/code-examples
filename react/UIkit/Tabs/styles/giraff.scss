@@ -1,0 +1,71 @@
+@import '../../../styles/giraffVariables';
+
+.yui-tabs {
+    -webkit-tap-highlight-color: transparent;
+  
+    &__tab-list {
+      border-bottom: 1px solid #DCDEE6;
+      margin: 0 0 10px;
+      padding: 0;
+      &--2, &--3 {
+        @media (max-width: 767px) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+        }
+      }
+    }
+  
+    &__tab {
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      bottom: -1px;
+      position: relative;
+      list-style: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 40px;
+      padding: 0 16px;
+      letter-spacing: 0.75px;
+      text-transform: uppercase;
+      cursor: pointer;
+      @media (max-width: 767px) {
+        display: flex;
+        max-width: 50%;
+        flex: 1;
+        min-width: 30%;
+      }
+  
+      &--selected {
+        border-bottom: 2px solid $ACCENT;
+        color: $ACCENT;
+      }
+  
+      &--disabled {
+        color: GrayText;
+        cursor: default;
+      }
+  
+      &:focus {
+        outline: none;
+  
+        &:after {
+          content: "";
+          position: absolute;
+          height: 5px;
+          left: -4px;
+          right: -4px;
+          bottom: -5px;
+        }
+      }
+    }
+  
+    &__tab-panel {
+      display: none;
+  
+      &--selected {
+        display: block;
+      }
+    }
+  }
